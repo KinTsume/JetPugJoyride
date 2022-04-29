@@ -1,0 +1,30 @@
+body{
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+}
+
+#game  {
+    position: relative;
+    width: 600px;
+    height: 600px;
+
+    margin: auto;
+
+    background-color: black;
+}
+
+#game-start{
+    color: red;
+}
+
+#player{
+    position: absolute;
+    width: 50px;
+
+    top: 100px;
+    left: 100px;
+}
+
+.debug{
+    border: 1px solid red;
+}
