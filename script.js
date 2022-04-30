@@ -38,7 +38,7 @@ let verifyCollision = (obj1, obj2) => {
 let applyGravity = true;
 let gravity = () => {
     if(applyGravity){
-        player.velocity[1] += .01;
+        player.velocity[1] += .05;
     }
     
 }
@@ -135,7 +135,7 @@ let player = {
     position: [0, 500],
     velocity: [0, 0],
     HSpeed: 10,
-    VAccel: .1
+    VAccel: .5
 };
 
 

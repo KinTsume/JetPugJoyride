@@ -3,6 +3,11 @@ body{
     background-size: cover;
 }
 
+@keyframes background {
+    0% {background-position-x: left;}
+    100% {background-position-x: 200%;}
+}
+
 #game  {
     position: relative;
     width: 600px;
@@ -10,7 +15,12 @@ body{
 
     margin: auto;
 
-    background-color: black;
+    background-image: url("./img/game-background.webp");
+
+    animation-name: background;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #game-start{
@@ -19,7 +29,7 @@ body{
 
 #player{
     position: absolute;
-    width: 50px;
+    width: 100px;
 
     top: 100px;
     left: 100px;
